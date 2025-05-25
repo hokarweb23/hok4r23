@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hokar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+     body {
+
+    min-height: 100vh; /* Full viewport height */
+    background-image: url('https://cdn.discordapp.com/attachments/1371554619280330866/1376200099847209000/601cdaedd8d20c49f8c61cb4ecabdaac.gif?ex=683475b8&is=68332438&hm=43840cd4a7da01e58d0137766b51876abf829337dcb728671e11eb6e13d8dc55&');
+    background-size: cover; /* Cover entire body */
+    background-position: center; /* Center the GIF */
+    background-attachment: fixed; /* Fixed on scroll */
+    background-repeat: no-repeat; /* No tiling */
+    background-color: #000; /* Fallback if GIF loads slowly */
+}
+        .container {
+            background: url('https://cdn.discordapp.com/attachments/1371554619280330866/1376202548855181382/b566af8bab8557bafb92a77717ab70f7.gif?ex=68347800&is=68332680&hm=1997dc23de3d659edfa49469e05a0cc81e0cc07e3b71cf8bd356f8da2d6f37b0&') center/cover no-repeat, rgba(255,255,255,0.9);
+            max-width: 600px;
+            margin: 0 auto;
+            
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;   
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #d60000;
+            margin-bottom: 20px;
+
+        }
+        
+        .bio {
+            color: #d60000;
+            margin-bottom: 30px;
+        }
+        
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            background: #7b064088;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: #d60000;
+            color: rgb(0, 0, 0);
+            transform: translateY(-3px);
+        }
+        
+        .social-link:hover .social-icon {
+            color: rgb(0, 0, 0);
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #4a89dc;
+            margin-right: 15px;
+        }
+        
+        .social-info {
+            text-align: left;
+            flex-grow: 1;
+        }
+        
+        .social-name {
+            font-weight: bold;
+        }
+        
+        .social-username {
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .social-link:hover .social-username {
+            color: #000000;
+        }
+        
+        footer {
+            margin-top: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://djnpwlvjfuoc1.cloudfront.net/u4gvi6%2Fpreview%2F67489036%2Fmain_large.gif?response-content-disposition=inline%3Bfilename%3D%22main_large.gif%22%3B&response-content-type=image%2Fgif&Expires=1748186527&Signature=ByAs02ZoO8MYU6r2FMx-BXRUwgBCTuYkDtfj8hYVRLafWf4hwWiidovUq~qLqkxDazU6maGoP994IUDlYSiyrRC3-b-eVdizqFTF~ArGhHutzSY8Usf~80YPEYONaGXobKf95TaBNbstFUBZjdmDYEiQqFlQYimDpBW0hu78CHqsLTcge8-tzSSiWv5pFrV9CmH1evBPnyGsnKMDLdctKnqKfpeTmNQ8~xVI1CNff6fwWNmypCNQ352uGhQbT~jSoAia9CyABg57hrSOrrod0BBYnMYqyN3FsNff1j~f3ctGmh6bMBiFaZVoT0CEQQEVLOHdZFGSVw3FkYtszhuMqg__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ" alt="Profile Picture" class="profile-img">
+        <h1>Hokar <img src="https://cdn3.emoji.gg/emojis/4012-black-verify.gif" width="25px" height="23px" > </h1>
+        <p class="bio">💰 Crypto | 💻 Web Developer | ⚡ Master Electrician</p>
+        
+        <div class="social-links">
+            <!-- Facebook -->
+            <a href="https://facebook.com/hok4r23" target="_blank" class="social-link">
+                <div class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social-info">
+                    <div class="social-name">Facebook</div>
+                    <div class="social-username">@hok4r23</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://tiktok.com/@hok4r" target="_blank" class="social-link">
+    <div class="social-icon">
+        <i class="fab fa-tiktok"></i>
+    </div>
+    <div class="social-info">
+        <div class="social-name">TikTok</div>
+        <div class="social-username">@hok4r</div>
+    </div>
+    <i class="fas fa-chevron-right"></i>
+</a>
+            
+            <!-- LinkedIn -->
+           <a href="https://t.me/hok4r23" target="_blank" class="social-link">
+    <div class="social-icon">
+        <i class="fab fa-telegram-plane"></i>
+    </div>
+    <div class="social-info">
+        <div class="social-name">Telegram</div>
+        <div class="social-username">@hok4r23</div>
+    </div>
+    <i class="fas fa-chevron-right"></i>
+</a>
+            
+            <!-- GitHub -->
+            <a href="https://snapchat.com/add/hok4r23" target="_blank" class="social-link">
+    <div class="social-icon">
+        <i class="fab fa-snapchat-ghost"></i>
+    </div>
+    <div class="social-info">
+        <div class="social-name">Snapchat</div>
+        <div class="social-username">@hok4r23</div>
+    </div>
+    <i class="fas fa-chevron-right"></i>
+</a>
+            
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@hok4r" target="_blank" class="social-link">
+                <div class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="social-info">
+                    <div class="social-name">YouTube</div>
+                    <div class="social-username">youtube.com/hok4r</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+        <footer>
+            © <span id="year"></span> Hokar. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
